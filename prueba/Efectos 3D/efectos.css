@@ -1,0 +1,178 @@
+div{
+	font-family: "Arial";
+	background-color: #a8cf45;
+	margin: 20px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+article{
+	position: relative;
+	display: inline-block;
+	margin: 50px 50px;
+	z-index: 30;
+	border: 5px solid black;
+	padding: 25px;
+}
+	h3{
+	text-align: center;
+}
+.giroX{
+	transform-origin: top;
+	animation: 2s giroX 1;
+}
+@keyframes giroX{
+	0%{
+		opacity: 0.5;
+		transform: perspective(200px)
+				   rotateX(90deg);
+	}
+	40%{
+		
+		transform: perspective(200px)
+				   rotateX(-20deg);
+	}
+	60%{
+		
+		transform: perspective(200px)
+				   rotateX(20deg);
+	}
+	80%{
+		
+		transform: perspective(200px)
+				   rotateX(-5deg);
+	}
+}
+
+.giroY{
+	/*transform-origin: top;*/
+	animation: 2s giroY 1;
+}
+@keyframes giroY{
+	0%{
+		opacity: 0.5;
+		transform: perspective(200px)
+				   rotateY(90deg);
+	}
+	40%{
+		
+		transform: perspective(200px)
+				   rotateY(-20deg);
+	}
+	60%{
+		
+		transform: perspective(200px)
+				   rotateY(20deg);
+	}
+	80%{
+		
+		transform: perspective(200px)
+				   rotateY(-5deg);
+	}
+}
+.giroOut1{
+	animation: 1.5s giroOut1 1;
+}
+@keyframes giroOut1{
+	100%{
+		opacity: 0.3;
+		transform:  perspective(200px)
+					rotateY(90deg);
+	} 
+}
+
+.giro3D{
+	animation: 1s giro3D 1;
+	backface-visibility: visible;
+}
+@keyframes giro3D{
+	40%{
+		transform: perspective(100px)
+				   rotateY(170deg)
+				   translateZ(120px);
+	}
+	50%{
+		transform: perspective(100px)
+				   rotateY(190deg)
+				   translateZ(120px);
+	}
+	80%{
+		transform: perspective(100px)
+				   rotateY(360deg)
+				   translateZ(0px);
+	}
+	100%{
+		transform: perspective(100px)
+				   rotateY(360deg);
+	}
+}
+.giro3D2{
+	animation: 1s giro3D2 1;
+	backface-visibility: visible;
+}
+@keyframes giro3D2{
+	40%{
+		transform: perspective(300px)
+				   translateZ(120px)
+				   rotateY(170deg);
+				   
+	}
+	50%{
+		transform: perspective(300px)
+				   translateZ(120px)
+				   rotateY(190deg);
+	}
+	80%{
+		transform: perspective(300px)
+				   translateZ(0px)
+				   rotateY(360deg);
+	}
+	100%{
+		transform: perspective(100px)
+				   rotateY(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

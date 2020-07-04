@@ -1,0 +1,702 @@
+div{
+	font-family: "Arial";
+	background-color: #a8cf45;
+	margin: 20px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+article{
+	position: relative;
+	display: inline-block;
+	margin: 50px 50px;
+	z-index: 30;
+	border: 5px solid black;
+	padding: 25px;
+}
+article:nth-of-type(1){
+	margin-right: 300px;
+	z-index: 40;
+}
+h3{
+	text-align: center;
+}
+.flash:hover{
+	animation: 1s flash 5;
+}
+
+@keyframes flash{
+	50%{
+		opacity: 1;
+	}
+	25%,75%{
+		opacity: 0;
+	}
+
+}
+
+
+.click:hover{
+	animation: 0.7s click 1;
+}
+
+
+@keyframes click{
+	25%,75%{
+		transform: scale(0.8);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+}
+
+
+.chicle:hover{
+	animation: 1s chicle 1;
+}
+@keyframes chicle{
+	30%{
+		transform: scaleX(1.25) scaleY(0.75);
+	}
+	40%{
+		transform: scaleX(0.75) scaleY(1.25);
+	}
+	60%{
+		transform: scaleX(1.15) scaleY(0.85);
+	}
+}
+
+
+.vibrador:hover{
+	animation: 1s vibracion infinite; 
+}
+
+@keyframes vibracion{
+	5%,25%,45%,65%,85%{
+		transform: translateY(-5px);
+	}
+	15%,35%,55%,75%{
+		transform: translateY(5px);
+	}
+	10%,30%,50%,70%,90%{
+		transform: translateX(-5px);
+	}
+	20%,40%,60%,80%{
+		transform: translateX(5px);
+	}
+
+}
+.cartel:hover{
+	animation: 1s cartell 1;
+	transform-origin: top center;
+}
+@keyframes cartell{
+	20%{
+		transform: rotate(15deg);
+	}
+	40%{
+		transform: rotate(-10deg);
+	}
+	60%{
+		transform: rotate(5deg);
+	}
+	80%{
+		transform: rotate(-3deg);
+	}
+}
+
+.balanceo:hover{
+	animation: 1s balanceo 1;
+}
+@keyframes balanceo{
+	20%{
+		transform: scale(0.7)
+				   rotate(6deg)	;
+	}
+	30%,70%{
+		transform: scale(1.1)
+				   rotate(-6deg)	;
+	}
+	50%,90%{
+		transform: scale(1.1)
+				   rotate(6deg)	;
+	}
+}
+
+.vaiven:hover{
+	animation: 1s vaiven 1;
+
+}
+@keyframes vaiven{
+	15%{
+		transform: rotate(-10deg)
+				   translateX(-25%);
+	}
+	30%{
+		transform: rotate(5deg)
+				   translateX(20%);
+	}
+	45%{
+		transform: rotate(-3deg)
+				   translateX(-10%);
+	}
+	60%{
+		transform: rotate(2deg)
+				   translateX(5%);
+	}
+	75%{
+		transform: rotate(-1deg)
+				   translateX(-3%);
+	}
+}
+
+.caida{
+	animation: 2s caida 1;
+	transform-origin: top left;
+}
+
+@keyframes caida{
+	20%, 60%{
+		transform: rotate(80deg);
+	}
+	40%{
+		transform: rotate(60deg);
+	}
+	80%{
+		transform: rotate(70deg);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(800px);
+		opacity: 0;
+	}
+}
+
+.inRotativo{
+	animation: 1s inRotativo 1;
+}
+
+@keyframes inRotativo{
+	0%{
+		opacity: 0;
+		transform: translateX(-100%)
+				   rotate(-260deg);
+	}
+}
+
+.outRotativo{
+	animation: 1s outRotativo 1;
+}
+
+@keyframes outRotativo{
+	100%{
+		opacity: 0;
+		transform: translateX(100%)
+				   rotate(260deg);
+	}
+}
+
+.rebote{
+	animation: 1.5s rebote 1;
+}
+
+@keyframes rebote{
+	20%,50%,80%{
+		transform: translateY(0px);
+	}
+	40%{
+		transform: translateY(-45px);
+	}
+	60%{
+		transform: translateY(-20px);
+	}
+
+}
+
+.reboteIn{
+	animation: 1s reboteIn 1;
+}
+
+@keyframes reboteIn{
+	0%{
+		opacity: 0;
+		transform: scale(0.3);
+	}
+	50%{
+		opacity: 1;
+		transform: scale(1.1);
+	}
+	70%{
+		
+		transform: scale(0.9);
+	}
+}
+
+.reboteInLateral{
+	padding-right: : 30px;
+	animation: 1s reboteInLateral 1;
+}
+
+@keyframes reboteInLateral{
+		0%{
+			opacity: 0;
+			transform: translateX(-2000px);	
+            
+			}	
+		50%{
+			opacity: 1;
+			transform: translateX(30px);
+		}
+		70%{
+			opacity: 1;
+			transform: translateX(-10px);
+		}
+
+}
+
+.salida{
+	animation: 1s salida 1;
+}
+
+@keyframes salida{
+	25%{
+		transform: scale(0.9); 
+	}
+	50%{
+		opacity: 1;
+		transform: scale(1.1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+
+.salida_superior{
+	animation: 1s salida_superior 1;
+}
+@keyframes salida_superior{
+	20%{
+		opacity: 1;
+		transform: translateY(20px);
+	}
+
+	100%{
+		opacity: 0;
+		transform: translateY(-500px);
+	}
+}
+
+.fade{
+	animation: 2s fade 1;
+}
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.8;
+	}
+}
+.tapa{
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 140px;
+	position: absolute;
+	background: white;
+	margin: 0px;
+	padding: 0px;
+	z-index: 15;
+	animation: 2s retirada 1;
+}
+@keyframes retirada{
+	0%{
+		left: 0px;
+	}
+}
+.fadeln{
+	z-index: 10;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+
+.velozln{
+	animation: 1s velozIn 1;
+}
+@keyframes velozIn{
+	0%{
+		opacity: 0;
+		transform: translateX(-300%)
+				   skewX(30deg);
+	}
+	60%{
+		opacity: 1;
+		transform: translateX(-20%)
+				   skewX(-30deg);
+	}
+	80%{
+		transform: translateX(0%)
+				   skewX(15deg);
+	}
+}
+
+.velozOut{
+	position: relative;
+	top: -90px;
+	animation: 1s velozOut 1;
+}
+@keyframes velozOut{
+	10%{
+opacity: 1;
+	}
+	100%{
+		transform: translateX(-300%)
+				   skew(-70deg);
+	    opacity: 0;
+	}
+}
+
+.giro:hover{
+	transform-origin: center;
+	animation: 1s giro 1;
+}
+@keyframes giro{
+	0%{opacity: 0;
+	   transform: rotate(-200deg);
+	}
+
+}
+
+.giro_esquina{
+	transform-origin: left bottom;
+	animation: 1s giro_esquina 1;
+}
+@keyframes giro_esquina{
+	0%{opacity: 0;
+	   transform: rotate(-200deg);
+	}
+
+}
+.sombra_movil{
+	transform: translate(0);
+	position: relative;
+}
+.sombra_movil:hover{
+	transform: translateY(-6px);
+	animation: 1.5s movercaja infinite;
+}
+.sombra_movil:before{
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: -webkit-radial-gradient(center,
+								ellipse,
+								rgba(100,0,0,0.35) 0%,
+								rgba(0,0,0,0) 80%);
+	transition-duration: 0.3s;
+}
+.sombra_movil:hover:before{
+	opacity: 0.5;
+	transform: translateY(6px);
+	animation: 1.5s moversombra infinite;
+}
+@keyframes movercaja{
+	50%{
+		transform: translateY(-3px);
+	}
+}
+@keyframes moversombra{
+	50%{
+		opacity: 1;
+		transform: translateY(3px);
+	}
+}
+.arrow{
+	position: relative;
+}
+.arrow:before{
+	transition-duration: 0.3s;
+	content: "";
+	border-color: transparent #a8cf45
+				  transparent transparent;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	left: 5px;
+	position: absolute;
+	margin-top: -15px;
+	top: 50%;
+}
+.arrow:hover:before{
+	animation: 1.3s arrow 1;
+}
+@keyframes arrow{
+	25%{
+		left: -15px;
+		transform: rotate(0deg);
+	}
+	65%{
+		left: -15px;
+		transform: rotate(180deg);
+	}
+	90%{
+		transform: rotate(180deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

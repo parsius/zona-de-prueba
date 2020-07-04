@@ -1,0 +1,55 @@
+div{
+	font-family: "Arial";
+	background-color: #a8cf45;
+	margin: 20px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+p{
+	padding-top: 15px;
+}
+
+.caja:hover{
+	animation: 5s cambia_color 5;
+}
+
+@-webkit-keyframes cambia_color{
+	0%, 75%{
+		background: blue;
+	}
+	50%{
+		background: red;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

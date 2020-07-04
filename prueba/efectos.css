@@ -1,0 +1,39 @@
+div{
+	border: 2px solid black;
+	width: 50%;
+	position: relative;
+	margin-left: 25%;
+}
+/* estilos de psudoelementos
+div:before{
+	content: "hola";
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+div:after{
+	content: "mundo";
+}
+*/
+
+div:hover{
+	background: orange;
+}
+a:focus{
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
